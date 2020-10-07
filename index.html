@@ -6,18 +6,10 @@
     <title>BIRTHDAY!</title>
     <link rel="stylesheet" href="resources/style/style.css">
     <link rel="icon" href="resources/icon/favicon.ico">
-    <link href="https://fonts.googleapis.com/css2?family=Monoton&display=swap" rel="stylesheet">
-    <style>
-        @import url('https://fonts.googleapis.com/css2?family=Ribeye+Marrow&display=swap');
-        h1 {
-            font-family: 'Ribeye Marrow', cursive;
-        }
-    </style>
-        
 </head>
 
 <body id="bod">
-    <script src="resources/js/sketch.min.js"></script>
+    <script src="resources/js/sketch.js"></script>
     <script>
         function Particle(x, y, radius) {
             this.init(x, y, radius);
@@ -156,10 +148,16 @@
         };
     </script>
     <script>
+        /* Background */
         let cols = ['peachpuff', 'white', 'lightgrey', 'pink'];
         let randomCol = cols[Math.floor(Math.random() * cols.length)];
-        // document.getElementsByTagName('body').style.color = randomCol;
         document.getElementById('bod').style.background = randomCol;
+
+        /* p font change */
+        function mouseDown() {
+            document.getElementById('paragraph').style.fontFamily = "Comic Sans MS";
+        }
+
     </script>
 
 
@@ -220,7 +218,7 @@
         </div>
     </div>
     <div class="bottom">
-        <p>Hope you smile today <br>From Steven</p>
+        <p id="paragraph">Hope you <span onmousedown="mouseDown()">smile</span> today <br>From Steven</p>
     </div>
 
 

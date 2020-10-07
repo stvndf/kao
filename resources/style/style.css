@@ -71,7 +71,7 @@ html {
     align-items: center;
     text-align: center;
     /* font-family: 'Monoton', cursive; */
-    font-size: 70px;
+    font-size: 71px;
     color: #ff702e;
 
     position: relative;
@@ -103,21 +103,52 @@ audio {
     text-align: center;
 }
 
+@font-face {
+    font-family: 'Dancing Script';
+    font-style: normal;
+    font-weight: 400;
+    src: local(''),
+        url('../fonts/dancing-script-v15-latin-regular.woff2') format('woff2');
+}
+
+@font-face {
+    font-family: 'Comic Sans MS';
+    font-style: normal;
+    font-weight: 400;
+    src: local(''),
+        url('../fonts/comic.ttf') format('truetype');
+}
+
 .bottom p {
     position: relative;
-    font-family: "Comic Sans MS", "Comic Sans", cursive;
+    /* font-family: 'Comic Sans MS', cursive; */
+    font-family: 'Dancing Script', cursive;
     color: #6e6e6e;
-    font-size: 30px;
+    font-size: 38px;
     animation: colFlash 4s 4s infinite;
     animation-delay: 172s;
 }
 
 @keyframes colFlash {
-    0%      {color: #6e6e6e;}
-    25%     {color: #5e5e5e;}
-    25%     {color: #6e6e6e;}
-    75%     {color: #a3a3a3;}
-    100%    {color: #6e6e6e;}
+    0% {
+        color: #6e6e6e;
+    }
+
+    25% {
+        color: #5e5e5e;
+    }
+
+    25% {
+        color: #6e6e6e;
+    }
+
+    75% {
+        color: #a3a3a3;
+    }
+
+    100% {
+        color: #6e6e6e;
+    }
 }
 
 /* @keyframes cssAnimation {
@@ -131,6 +162,18 @@ audio {
     87.5%    {color: pink;}
     100%    {color: #6e6e6e;}
 } */
+
+@font-face {
+    font-family: 'Ribeye Marrow';
+    font-style: normal;
+    font-weight: 400;
+    src: local('Ribeye Marrow'), local('RibeyeMarrow-Regular'),
+        url('/resources/fonts/ribeye-marrow-v10-latin-regular.woff2') format('woff2');
+}
+
+h1 {
+    font-family: 'Ribeye Marrow', cursive;
+}
 
 h1 {
     display: inline-block;
