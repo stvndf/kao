@@ -93,7 +93,7 @@ audio {
     font-style: normal;
     font-weight: 400;
     src: local(''),
-        url('../fonts/dancing-script-v15-latin-regular.woff2') format('woff2');
+        url('/fonts/dancing-script-v15-latin-regular.woff2') format('woff2');
 }
 
 @font-face {
@@ -101,7 +101,7 @@ audio {
     font-style: normal;
     font-weight: 400;
     src: local(''),
-        url('../fonts/comic.ttf') format('truetype');
+        url('/fonts/comic.ttf') format('truetype');
 }
 
 .bottom p {
