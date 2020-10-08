@@ -1,3 +1,67 @@
+@font-face {
+    font-family: 'Ribeye Marrow';
+    font-style: normal;
+    font-weight: 400;
+    src: local('Ribeye Marrow'), local('RibeyeMarrow-Regular'),
+        url('../fonts/ribeye-marrow-v10-latin-regular.woff2') format('woff2');
+}
+
+@font-face {
+    font-family: 'Dancing Script';
+    font-style: normal;
+    font-weight: 400;
+    src: local(''),
+        url('../fonts/dancing-script-v15-latin-regular.woff2') format('woff2');
+}
+
+@font-face {
+    font-family: 'Comic Sans MS';
+    font-style: normal;
+    font-weight: 400;
+    src: local(''),
+        url('../fonts/comic.ttf') format('truetype');
+}
+
+@keyframes colFlash {
+    0% {
+        color: #6e6e6e;
+    }
+
+    25% {
+        color: #5e5e5e;
+    }
+
+    25% {
+        color: #6e6e6e;
+    }
+
+    75% {
+        color: #a3a3a3;
+    }
+
+    100% {
+        color: #6e6e6e;
+    }
+}
+
+@keyframes wiggle {
+    0% {
+        transform: rotate(0deg);
+    }
+    80% {
+        transform: rotate(0deg);
+    }
+    85% {
+        transform: rotate(1deg);
+    }
+    95% {
+        transform: rotate(-1deg);
+    }
+    100% {
+        transform: rotate(0deg);
+    }
+}
+
 canvas {
     position: fixed;
 }
@@ -66,6 +130,24 @@ html {
     position: relative;
 }
 
+.left h1 {
+    font-family: 'Ribeye Marrow', cursive;
+    display: inline-block;
+    animation: wiggle 1.5s infinite;
+}
+
+.left h1:hover {
+    animation: none;
+}
+
+.left h1 #hb:hover {
+    color: brown;
+}
+
+.left h1 #name:hover {
+    color: orange;
+}
+
 audio {
     position: relative;
 }
@@ -88,22 +170,6 @@ audio {
     text-align: center;
 }
 
-@font-face {
-    font-family: 'Dancing Script';
-    font-style: normal;
-    font-weight: 400;
-    src: local(''),
-        url('../fonts/dancing-script-v15-latin-regular.woff2') format('woff2');
-}
-
-@font-face {
-    font-family: 'Comic Sans MS';
-    font-style: normal;
-    font-weight: 400;
-    src: local(''),
-        url('../fonts/comic.ttf') format('truetype');
-}
-
 .bottom p {
     position: relative;
     font-family: 'Dancing Script', cursive;
@@ -113,74 +179,7 @@ audio {
     animation-delay: 172s;
 }
 
-@keyframes colFlash {
-    0% {
-        color: #6e6e6e;
-    }
 
-    25% {
-        color: #5e5e5e;
-    }
-
-    25% {
-        color: #6e6e6e;
-    }
-
-    75% {
-        color: #a3a3a3;
-    }
-
-    100% {
-        color: #6e6e6e;
-    }
-}
-
-@font-face {
-    font-family: 'Ribeye Marrow';
-    font-style: normal;
-    font-weight: 400;
-    src: local('Ribeye Marrow'), local('RibeyeMarrow-Regular'),
-        url('../fonts/ribeye-marrow-v10-latin-regular.woff2') format('woff2');
-}
-
-h1 {
-    font-family: 'Ribeye Marrow', cursive;
-}
-
-h1 {
-    display: inline-block;
-    animation: wiggle 1.5s infinite;
-}
-
-h1:hover {
-    animation: none;
-}
-
-h1 #hb:hover {
-    color: brown;
-}
-
-h1 #name:hover {
-    color: orange;
-}
-
-@keyframes wiggle {
-    0% {
-        transform: rotate(0deg);
-    }
-    80% {
-        transform: rotate(0deg);
-    }
-    85% {
-        transform: rotate(1deg);
-    }
-    95% {
-        transform: rotate(-1deg);
-    }
-    100% {
-        transform: rotate(0deg);
-    }
-}
 
 
 
