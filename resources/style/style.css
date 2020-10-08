@@ -1,11 +1,9 @@
 canvas {
     position: fixed;
-    /* z-index: -1; */
 }
 
 html {
     height: 100%;
-    /* max-width: 1400px; */
     margin: 0 auto;
     max-height: 750px;
 }
@@ -20,8 +18,6 @@ html {
         grid-template-areas:
             "l r"
             "b b";
-        /* background: peachpuff; */
-        /* background: turquoise; */
         justify-content: center;
         flex-direction: column;
         animation: fadeIn 12s;
@@ -39,7 +35,6 @@ html {
             "l"
             "r"
             "b";
-        /* background: peachpuff; */
         justify-content: center;
         flex-direction: column;
         animation: fadeIn 12s;
@@ -50,7 +45,6 @@ html {
     from {
         opacity: 0;
     }
-
     to {
         opacity: 1;
     }
@@ -58,24 +52,18 @@ html {
 
 .left {
     grid-area: l;
-    /* background: rgb(250, 220, 175); */
-
     display: inline-flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
 }
 
-/* @import url('https://fonts.googleapis.com/css2?family=Monoton&display=swap'); */
 .left h1 {
     align-items: center;
     text-align: center;
-    /* font-family: 'Monoton', cursive; */
     font-size: 71px;
     color: #ff702e;
-
     position: relative;
-    /*z-index: 1; */
 }
 
 audio {
@@ -84,19 +72,16 @@ audio {
 
 .right {
     grid-area: r;
-    /* background: red; */
     display: flex;
     align-items: center;
     justify-content: center;
     display: flex;
     flex-direction: column;
     align-items: center;
-    /* position: relative; */
 }
 
 .bottom {
     grid-area: b;
-    /* background: beige; */
     display: flex;
     justify-content: center;
     align-items: center;
@@ -121,7 +106,6 @@ audio {
 
 .bottom p {
     position: relative;
-    /* font-family: 'Comic Sans MS', cursive; */
     font-family: 'Dancing Script', cursive;
     color: #6e6e6e;
     font-size: 38px;
@@ -150,18 +134,6 @@ audio {
         color: #6e6e6e;
     }
 }
-
-/* @keyframes cssAnimation {
-    0%      {color: #6e6e6e;}
-    12.5%     {color: orangered;}
-    25%     {color: #6e6e6e;}
-    37.5%     {color: lime;}
-    50%    {color: #6e6e6e;}
-    62.5%    {color: yellow;}
-    75%    {color: #6e6e6e;}
-    87.5%    {color: pink;}
-    100%    {color: #6e6e6e;}
-} */
 
 @font-face {
     font-family: 'Ribeye Marrow';
@@ -196,19 +168,15 @@ h1 #name:hover {
     0% {
         transform: rotate(0deg);
     }
-
     80% {
         transform: rotate(0deg);
     }
-
     85% {
         transform: rotate(1deg);
     }
-
     95% {
         transform: rotate(-1deg);
     }
-
     100% {
         transform: rotate(0deg);
     }
@@ -222,19 +190,15 @@ h1 #name:hover {
 
 @media only screen and (min-width: 700px) {
     .minion {
-        /* position: relative; */
         margin: 0;
         position: absolute;
         top: 12%;
-        /* left: 50%; */
-        /* -ms-transform: translate(-50%, -50%); */
         transform: translate(-12%, -50%);
     }
 }
 
 @media only screen and (max-width: 699px) {
     .minion {
-        /* position: relative; */
         margin: 0;
         position: absolute;
         transform: translate(-24px, -134px);
@@ -372,12 +336,10 @@ h1 #name:hover {
 }
 
 @keyframes lefthair {
-
     0%,
     25%,
     31%,
     100% {}
-
     30% {
         transform: rotate(31deg) translate3d(-3px, -1px, 0);
     }
@@ -428,7 +390,6 @@ h1 #name:hover {
 }
 
 @keyframes blackeye {
-
     0%,
     20%,
     50%,
@@ -436,12 +397,10 @@ h1 #name:hover {
     100% {
         transform: translateX(0px);
     }
-
     30%,
     40% {
         transform: translateX(15px);
     }
-
     80%,
     90% {
         transform: translateX(-15px);
@@ -461,7 +420,6 @@ h1 #name:hover {
 }
 
 @keyframes white-eye {
-
     0%,
     20%,
     50%,
@@ -469,12 +427,10 @@ h1 #name:hover {
     100% {
         transform: translateX(0px);
     }
-
     30%,
     40% {
         transform: translate3d(3px, 4px, 0);
     }
-
     80%,
     90% {
         transform: translate3d(-15px, 4px, 0);
@@ -530,7 +486,6 @@ h1 #name:hover {
         height: 25px;
         top: 180px;
     }
-
     0%,
     35%,
     48%,
@@ -557,14 +512,12 @@ h1 #name:hover {
 }
 
 @keyframes mouse-mask {
-
     40%,
     43% {
         width: 60.5px;
         top: -19.3px;
         left: 1.5px;
     }
-
     0%,
     35%,
     48%,
@@ -595,13 +548,11 @@ h1 #name:hover {
 }
 
 @keyframes right-hand {
-
     0%,
     50%,
     100% {
         transform: rotate(40deg);
     }
-
     30% {
         transform: rotate(37deg) translateX(1px);
     }
@@ -615,13 +566,11 @@ h1 #name:hover {
 }
 
 @keyframes left-hand {
-
     0%,
     50%,
     100% {
         transform: rotate(-40deg);
     }
-
     80% {
         transform: rotate(-37deg) translateX(-1px);
     }
@@ -664,13 +613,11 @@ h1 #name:hover {
 }
 
 @keyframes right-foot {
-
     0%,
     50%,
     100% {
         transform: rotate(0deg);
     }
-
     80% {
         transform: rotate(10deg);
     }
@@ -685,13 +632,11 @@ h1 #name:hover {
 }
 
 @keyframes left-foot {
-
     0%,
     50%,
     100% {
         transform: rotate(0deg);
     }
-
     30% {
         transform: rotate(-10deg);
     }
